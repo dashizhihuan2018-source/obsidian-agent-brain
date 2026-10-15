@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obsidian超级大脑"
+  short_description: "从零建库，安全接入 WorkBuddy、Codex，建立跨会话记忆与个人知识工作流"
+  default_prompt: "请使用 $obsidian-agent-brain，将 Obsidian 配置为我的个人知识库和智能体共享记忆，保护已有资料并验证跨会话读写。"
