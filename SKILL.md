@@ -4,7 +4,7 @@ description: Use when a user wants to set up or connect an Obsidian personal kno
 license: MIT
 ---
 
-# Obsidian 智能体共享大脑
+# Obsidian超级大脑
 
 将 Obsidian 的本地 Markdown 作为用户可读、可改、可备份的知识与记忆层。默认中文，尊重用户已有分类。所谓“超级大脑”是资料组织、按需检索、记忆提炼与任务接续的工作流，不是模型训练、无限上下文或所有客户端自动互通。
 
