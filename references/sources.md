@@ -13,3 +13,13 @@
 | [WorkBuddy：记忆](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Memory) | 产品内置记忆另有提取和管理机制，不是 vault 同步接口 |
 
 基础版不依赖模型 API、特定模型名称、远程服务、MCP、付费同步或社区插件。没有声称通过 WorkBuddy GUI、Codex 新会话、多设备或 Windows/macOS 全平台运行验收；使用者必须按验收清单在自己的环境验证。
+
+## 2026-10-26：旧库升级研究补充
+
+热门项目研究、取舍方法和可更新的公开候选见 [研究驱动的旧库升级](existing-vault-upgrade.md)。模板、插件与智能体协议分开比较，不维护永久星标榜，不复制私人资料作为 Skill 示例。
+
+- [Obsidian Search](https://help.obsidian.md/Plugins/Search)：核心搜索与嵌入视图。
+- [Obsidian Templates](https://help.obsidian.md/Plugins/Templates)：核心模板位置、变量与 YAML 变量加引号的边界。
+- [Obsidian Properties](https://help.obsidian.md/Editing+and+formatting/Properties)：轻量结构化属性。
+
+公开项目的说明不等于其脚本/依赖已通过本机安全与兼容性验收，不能当作执行授权；入口文件的自动加载依然按具体客户端核验。

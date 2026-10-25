@@ -1,6 +1,6 @@
 ---
 name: obsidian-agent-brain
-description: Use when a user wants to set up or connect an Obsidian personal knowledge base as shared long-term memory for WorkBuddy, Codex, or other agents, including folder design, session handoff, and safe adaptation of an existing vault.
+description: Set up, audit, or incrementally improve an Obsidian personal knowledge base and shared agent memory for WorkBuddy, Codex, or other clients, including research-led adaptation of an existing vault, safe session handoff, and real client verification.
 license: MIT
 ---
 
@@ -14,6 +14,13 @@ license: MIT
 
 **开始建库前，完整读取 [建库指南](references/setup.md)；配置客户端前，完整读取 [接入指南](references/integrations.md)。** 不需要接入的客户端不做修改。官方入口与版本边界见 [来源](references/sources.md)，实际环境与最新官方文档不一致时先核实。
 
+## 按请求选择模式
+
+- **检查是否可用：** 只读检查仓库、入口与真实界面；除非用户要求修复，不初始化、不改规则、不增加测试数据。
+- **从零搭建 / 接入客户端：** 按下方流程，分别验证文件、规则入口、权限与新会话。
+- **学习热门项目并提升旧库：** 先完整读 [研究驱动的旧库升级](references/existing-vault-upgrade.md)，完成来源、适用性与取舍研究后再实施。保留原目录与权威项目记忆，用户真实偏好留在私人库，不固化进可分享的 Skill。
+- **本地部署 / 公开分享技能：** 完整读 [部署与发布](references/deployment-release.md)，将通用经验与真实知识库分离；确认当前发布授权，审查待提交文件与历史，验证本机包及匿名远端内容。部署技能不是部署后台服务或接通所有客户端。
+
 ## 实施顺序
 
 1. **盘点与保护。** 只检查相关配置；不扫描凭证或整个硬盘。区分新库和已有库，记录实际路径。已有文件修改前备份，展示改动范围并增量合并，不替换全局规则、内置记忆或整个 `.obsidian`。
@@ -21,6 +28,8 @@ license: MIT
 3. **接入。** 每个客户端只加入指向同一份“记忆规则.md”的短入口。技能安装、规则加载、文件权限和内置记忆是不同层，逐项核验。WorkBuddy 优先桌面端当前支持的技能导入与规则入口；不臆造全局路径或声称小程序能读本机目录。
 4. **工作方式。** 读取 [运行协议](references/operations.md)，把用户选定的约定落到 vault 的规则中。开始会话按任务读取；执行中区分事实和推断；收尾按层写回并报告文件。没有后台运行机制时不承诺自动定时整理。
 5. **验收。** 读取并执行 [验收清单](references/acceptance.md)。用无隐私测试数据做写入、全新会话读取、更新、第二客户端交接；没有实测的客户端保留“未验证”。
+
+对已有库可以用 `scripts/check_notes.py` 检查显式指定笔记的库内链接、越界和表格别名转义；先读其适用边界，见旧库升级指南。它只读、不遍历全库，不代替真实阅读视图、新会话或同步安全验收。
 
 从技能根目录执行，`--vault` 必须换成用户确认的绝对路径：
 
