@@ -1,12 +1,34 @@
 ---
 name: obsidian-agent-brain
-description: Set up, audit, or incrementally improve an Obsidian personal knowledge base and shared agent memory for WorkBuddy, Codex, or other clients, including research-led adaptation of an existing vault, safe session handoff, and real client verification.
+description: Set up, audit, or improve Obsidian as a personal knowledge base and shared memory layer for GPT/ChatGPT, WorkBuddy, Trae, OpenCode, Claude Code, and Codex, with research-led vault adaptation, permission-aware client integration, and verified handoff.
 license: MIT
 ---
 
 # Obsidian超级大脑
 
 将 Obsidian 的本地 Markdown 作为用户可读、可改、可备份的知识与记忆层。默认中文，尊重用户已有分类。所谓“超级大脑”是资料组织、按需检索、记忆提炼与任务接续的工作流，不是模型训练、无限上下文或所有客户端自动互通。
+
+定位：**Obsidian 是 AI 智能体的通用大脑，客户端是不同的工作入口。** GPT/ChatGPT、WorkBuddy、Trae、OpenCode、Claude Code 与 Codex 可按实际工具、文件权限和规则入口接入；共用权威资料与提案协议，不表示产品内置记忆互通、后台持续同步或全部客户端已经验收。先明确 GPT 所指的宿主与运行模式，不把模型名称当作本机访问能力。
+
+## 新用户可复制提示词：WorkBuddy 跨软件知识库
+
+将下面整段复制到 WorkBuddy 桌面端的新对话。它是新用户发起建库的提示词，不是宿主自动执行或已获资料访问权的证明；实际能力以该用户当前版本、授权与验收为准。
+
+```text
+请帮我实际搭建“个人跨软件知识库”，以 Obsidian 本地 Markdown 为 AI 智能体的通用知识与记忆层，让 GPT（区分 ChatGPT 与 Codex）、WorkBuddy、Trae、OpenCode、Claude Code 等按实际能力协同；不要只介绍概念。
+
+请从 https://github.com/dashizhihuan2018-source/obsidian-agent-brain 获取并检查「Obsidian超级大脑」完整 Skill，先阅读 SKILL.md 及本次需要的指南。若已安装，先核对版本并复用，不重复安装或覆盖已有配置。
+
+1. 先检查操作系统、Obsidian、已有知识库，以及当前 WorkBuddy 的文件访问、技能、规则和内置记忆能力。确认我常用的软件、主要工作流程、知识库位置，以及允许读写和发送给云端模型的资料范围；不要推断我的职业、偏好或项目优先级。
+2. 已有知识库就保留原目录和资料，备份要改的文件后增量接入，不移动、删除或覆盖原件、全局规则和产品内置记忆。没有知识库时，协助从 Obsidian 官网安装，在我确认的“文档/个人大脑”位置建库，并实际指导打开。
+3. 首版只依赖本地 Markdown 和核心功能，建立首页、总览、收件箱、项目、长期领域、参考资料、知识卡片、每日记录、归档、智能体记忆和模板。每个项目有概览；已有外部项目记忆就链接原件，不复制详细状态。按我的实际工作方式组织导航。
+4. 配置开始会话按需读取规则、MEMORY、相关待办和项目，工作前先检索，收尾分别更新长期约定、项目决定、未完成事项、每日摘要与可复用知识，并报告具体文件。不要全文扫描或保存完整聊天；事实、来源、推断和待确认内容要分开。
+5. 跨软件共用同一份权威资料，先接入 WorkBuddy，GPT/ChatGPT、Codex、Trae、OpenCode、Claude Code 等由我选定后逐个核验版本、模式、实际入口、权限和读写角色；默认一个整理者，其他智能体提交唯一命名提案。不假设某文件名能自动加载，不承诺装上 Skill 就全部互通；无法自动接入时提供明确的手动读取方案，无本机权限时仅使用我批准的脱敏摘要交接。
+6. 不写密码、Key、Token 等敏感信息；公司文档和他人资料先确认授权。说明云端模型可能接收哪些文件内容。不擅自上传知识库到 GitHub、网盘或远程服务，不自动购买服务、安装第三方插件、开启同步或创建定时任务。
+7. 在确认的目录与权限范围内直接完成可自动执行的步骤；遇到必须由我选择、授权、安装或操作的界面时，给出具体步骤。遇到限制明确报告，不假装已读取、保存或接入。
+8. 经我同意，用无隐私演示验证：首页链接、测试偏好与待办写入、全新会话指出来源文件、修改后读回最新状态、旧资料保护。无法在当前会话完成的新会话或第二客户端测试标为待我操作，演示清理也先征得同意。
+9. 最后生成并从首页链接“使用指南”，教我使用“记一下”“整理这些资料”“开始一个项目”“继续上次的项目”“今天有什么要做”“今天收尾”“每周复盘”“以前研究过吗”“忘记这条信息”，说明备份恢复和新软件接入方式，并分别列出已实际验证、需要我操作、尚未验证或不支持的内容。
+```
 
 ## 先确定范围
 

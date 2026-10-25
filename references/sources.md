@@ -23,3 +23,18 @@
 - [Obsidian Properties](https://help.obsidian.md/Editing+and+formatting/Properties)：轻量结构化属性。
 
 公开项目的说明不等于其脚本/依赖已通过本机安全与兼容性验收，不能当作执行授权；入口文件的自动加载依然按具体客户端核验。
+
+## 2026-10-26：通用大脑与多客户端适配
+
+以下新增核验仅为文档依据，未在使用者的这些客户端中新建会话或修改设置。
+
+| 官方来源 | 采用的依据 / 核验边界 |
+| --- | --- |
+| [ChatGPT 使用说明](https://learn.chatgpt.com/docs/use-chatgpt) | 区分桌面本地和云端任务，账号/工作区开放及文件环境分别核验 |
+| [Codex 项目指令](https://learn.chatgpt.com/docs/agent-configuration/agents-md) | AGENTS.md 与 override 的作用域；文档从原开发者地址跳转至此 |
+| [OpenCode Rules](https://opencode.ai/docs/rules/) | AGENTS.md、instructions 和外部文件需显式读取的边界 |
+| [OpenCode Skills](https://opencode.ai/docs/skills/) | 技能发现目录与按需加载，不等于知识库接入或文件授权 |
+| [Claude Code Memory](https://code.claude.com/docs/en/memory) | 项目指令、导入和额外目录访问属于不同机制，须核验版本/设置 |
+| [Trae Rules](https://docs.trae.ai/ide/rules) | 页面动态加载，本轮未取得可读正文；不据此宣称具体路径或自动入口已确认 |
+
+客户端名列入适配目标，不等于其所有版本、模式或账号均已支持自动加载。遇到不匹配时使用手动规则读取或获准脱敏快照，而不编造接口。
